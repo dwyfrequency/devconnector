@@ -1,7 +1,9 @@
 const express = require("express");
 const router = express.Router();
 
-// this will respond to anything sent to /api/users/test - you can see the routes defined fully in the server
+// @route   GET api/users/test
+// @desc    Tests users route
+// @access  Public
 router.get("/test", (req, res) => res.json({ msg: "Users Works" }));
 
 module.exports = router;
